@@ -1,44 +1,32 @@
 # RLB3 environment for Upkie wheeled bipeds
 
-Software to train neural-network policies for Upkie wheeled bipeds using [RL Baselines3 Zoo](https://github.com/DLR-RM/rl-baselines3-zoo).
+This repository has moved to Codeberg:
 
-<img alt="image" src="https://github.com/user-attachments/assets/2d0313b2-ed96-4acd-b3e4-03db68437097" />
+<p align="center">
+  <a href="https://codeberg.org/upkie/rlb3_balancer">
+    <img src="https://codeberg.org/Codeberg/GetItOnCodeberg/raw/branch/main/get-it-on-blue-on-white.png" alt="Get it on Codeberg" height="80">
+  </a>
+</p>
 
-## Installation
+Its new address is: **https://codeberg.org/upkie/rlb3_balancer**
 
-This project uses [pixi](https://pixi.sh/latest/#installation) to run tasks and manage Python dependencies automatically.
+Codeberg is a free and open-source code forge maintained by a non-profit organization. Development, issues and pull requests now happen over there, and this repository is not mirrored.
 
-## Usage
+## For users
 
-To train a new policy:
+You can clone the new repository and run it as before:
 
-```console
+```bash
+git clone https://codeberg.org/upkie/rlb3_balancer.git
 pixi run train
 ```
 
-This will train using 8 parallel environments by default. To customize the number of environments or show the PyBullet GUI during training:
+## For contributors
 
-```console
-pixi run train <n_envs> [gui]
+If you have a local clone of this repository, you can point it at the new remote:
+
+```bash
+git remote set-url origin https://codeberg.org/upkie/rlb3_balancer.git
 ```
 
-Examples:
-
-```console
-# Train with 4 parallel environments (no GUI)
-pixi run train 4
-
-# Train with 2 environments and display the PyBullet GUI
-pixi run train 2 gui
-```
-
-To test the latest trained policy:
-
-```console
-pixi run enjoy
-```
-
-## Development
-
-- Linting: `pixi run lint`
-- Testing: `pixi run test`
+Issues and pull requests are welcome on [Codeberg](https://codeberg.org/upkie/rlb3_balancer). This GitHub repository is archived and no longer receives updates.
